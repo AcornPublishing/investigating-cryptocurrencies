@@ -1,0 +1,1 @@
+import hashlibtext = ("b7b41705c22cf270de747905d4a981a61b1b5a4d")for nonce in range(10000000):    input = text+str(nonce)    hash = hashlib.sha256(input.encode()).hexdigest()    print (input, hash)    if hash.startswith("00000"):        print ("Found Hash")        break
